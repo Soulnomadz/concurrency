@@ -23,7 +23,9 @@ fn main() -> Result<()> {
 
     loop {
         thread::sleep(Duration::from_secs(3));
-        println!("{:?}", metrics.snap());
+        // println!("{:?}", metrics.snap());
+        println!("{}", metrics);
+        
     }
 }
 
