@@ -11,7 +11,7 @@ const M: usize = 4;
 
 fn main() -> Result<()> {
     let metrics = Metric::new();
-    println!("{:?}", metrics.snap());
+    println!("{}", metrics);
 
     for idx in 0..N {
         task_worker(idx, metrics.clone())?;
